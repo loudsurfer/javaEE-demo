@@ -13,7 +13,11 @@
 <body>
   <h1>Testing JSP</h1>
   <p>
-      <%= "Hello world" %>
+      <%
+          java.util.Date now = new java.util.Date();
+          String someString = "Текущая дата: " + now;
+      %>
+      <%= someString %>
   </p>
 </body>
 </html>
